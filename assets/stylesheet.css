@@ -1,0 +1,46 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section 1 */
+
+.s1 div :first-child {
+    color: red;
+}
+
+.s1 div :last-child {
+    color: royalblue;
+}
+
+/* Section 2 */
+
+.s2 div :nth-child(2) {
+    color: red;
+}
+
+.s2 div :nth-last-child(2) {
+    color: royalblue;
+}
+
+/* Section 3 */
+
+.s3 div p:nth-of-type(2) {
+    color: red;
+}
+
+.s3 div p:nth-last-of-type(1) {
+    color: royalblue;
+}
+
+/* Section 4 */
+/* Este se aplica a solo una etiqueta */
+
+.s4 div :only-child {
+    color: red;
+}
+
+/* Section 5 */
+
+.s5 div span:only-of-type {
+    color: royalblue;
+}
