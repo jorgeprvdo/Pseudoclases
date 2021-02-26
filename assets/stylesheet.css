@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --primary: darkcyan;
+}
+
 /* Section 1 */
 
 .s1 div :first-child {
@@ -43,4 +47,71 @@
 
 .s5 div span:only-of-type {
     color: royalblue;
+}
+
+/* Links */
+
+#links a:visited {
+    color: green;
+}
+
+#links a {
+    color: red;
+}
+
+#links a:hover {
+    color: violet;
+}
+
+#cuadro {
+    width: 500px;
+    height: 200px;
+    background-color: teal;
+}
+
+#cuadro::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    background-color: tomato;
+}
+
+#cuadro::after {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    background-color: royalblue;
+}
+
+.exciting-text::before {
+    content: "EXCITING! -> ";
+    color: green;
+}
+
+.boring-text::after {
+    content: " <- BORING";
+    color: red;
+}
+
+/*INPUT*/
+
+.inpt:invalid {
+    border: red 2px double;
+    transition: 0.5s;
+}
+
+.inpt:valid {
+    border: green 2px double;
+    transition: 0.5s;
+}
+
+.inpt:required {
+    border: goldenrod 1px double;
+    transition: 0.5s;
+}
+
+.inpt:focus {
+    border: royalblue 3px double;
 }
